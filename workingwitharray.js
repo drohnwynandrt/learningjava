@@ -1,6 +1,15 @@
 var cat = ["hoefdier", "vis", "vogel"];
-var dier = ["paard", "mus", "goudvis"];
+var dier = ["paard", "goudvis", "mus"];
+var textone;
+var texttwo;
+var i;
 
-document.getElementById("demo").innerHTML += "de " + dier[0] + " behoort tot de " + cat[0] +"<br>";
-document.getElementById("demo").innerHTML += "de " + dier[1] + " behoort tot de " + cat[2] +"<br>";
-document.getElementById("demo").innerHTML += "de " + dier[2] + " behoort tot de " + cat[1] +"<br>";
+for (i=0; i < dier.length; i++){
+textone = dier[i];
+}
+
+for (i=0; i < cat.length; i++){
+texttwo = cat[i];
+}
+
+document.getElementById("output").innerHTML += "de " + textone + " behoort tot de " + texttwo+" <br>";
